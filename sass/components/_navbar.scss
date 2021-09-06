@@ -1,0 +1,86 @@
+header {
+    border-bottom: 2px solid $bordeaux;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;    
+    z-index: 10;
+    position: relative;
+    margin: 0 auto;
+
+    &__logo-img{
+        width: 80%;
+        padding: 0.8rem;
+    }
+
+    &__menu {
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 7);
+        justify-content: space-between;
+        color: $black;
+
+        @include respond(tablet) {
+           position: fixed;
+           right: 0;
+           top: 0;
+           height: 100vh;
+           background-color: $white;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           width:70%;
+           z-index: 15;
+           border-left: 2px solid $bordeaux;
+           transform: translateX(100%);
+           transition: transform 0.5s ease-in;
+        }
+
+        &--active{
+            transform: translateX(0%);
+        }
+    }
+
+    &__link {
+        @include respond(tablet) {
+            display: block;
+            opacity: 0;
+        }
+
+        &:hover {
+            transition: 0.2s ease-in-out;
+            color: $strong-pink;
+        }
+    }
+
+    &__burger {
+        display: none;
+        cursor: pointer;
+        z-index: 20;
+        div {
+            width: 30px;
+            height: 3px;
+            background-color: $bordeaux;
+            margin: 5px;
+            
+        }
+
+        @include respond(tablet) {
+           display: block;
+        }
+    }
+}
+
+@keyframes navLinksFade {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+

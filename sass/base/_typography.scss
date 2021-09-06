@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap');
+
+@font-face{
+    font-family: 'John Mayer';
+    src: url(../../fonts/John_Mayer.otf) format('opentype');
+}
+
+$roboto : 'Roboto', sans-serif;
+$johnMayer : 'John Mayer', serif;
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$bold: 700;
+
+body {
+    font-family: $roboto;
+    font-weight: $light;
+}
+
+h1 {
+    font-family: $johnMayer;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: $johnMayer;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: $johnMayer;
+    font-weight: normal;
+}
+
+.nav {
+    font-weight: $medium;
+    text-transform: uppercase;
+}
+
+.quienesSomos__item-title {
+    font-family: $roboto;
+    font-weight: $medium;
+    text-transform: uppercase;
+}
+
