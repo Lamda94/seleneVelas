@@ -372,7 +372,7 @@ h1 {
   font-family: "John Mayer", serif;
   font-weight: normal;
   font-size: 4.5rem;
-  line-height: 100%;
+  line-height: 110%;
 }
 
 h2 {
@@ -399,6 +399,8 @@ p {
 
 .nav {
   font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
@@ -429,6 +431,9 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 10;
   background-color: #FFFFFF;
 }
@@ -443,12 +448,23 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 8vh;
 }
 
 .nav__logo-img {
   width: 80%;
-  padding: 0.8rem;
+  padding: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(100% / 12 * 2);
+          flex: 0 0 calc(100% / 12 * 2);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav__logo-img {
+    width: 70%;
+  }
 }
 
 .nav__menu {
@@ -464,13 +480,22 @@ header {
   color: #181818;
 }
 
+@media only screen and (max-width: 1024px) {
+  .nav__menu {
+    font-size: 0.875rem;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(100% / 12 * 8);
+            flex: 0 0 calc(100% / 12 * 8);
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav__menu {
     position: fixed;
-    left: 10%;
+    right: 0;
     top: 0;
     height: 100vh;
-    padding: 25% 10% 25% 10%;
+    width: 75vw;
     background-color: #FFFFFF;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -479,10 +504,13 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    z-index: 15;
+    padding: 20% 0 20% 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
     border-left: 2px solid #80395E;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -609,12 +637,12 @@ header {
   left: 0;
   z-index: 1;
   mix-blend-mode: multiply;
-  background-color: rgba(122, 122, 122, 0.8);
+  background-color: #7a7a7a;
 }
 
 .home__background-img {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -644,16 +672,35 @@ header {
   margin-bottom: 0;
 }
 
+@media only screen and (max-width: 480px) {
+  .home__welcome-title {
+    font-size: 3.375rem;
+  }
+}
+
 .home__welcome-p {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .home__welcome-p {
+    font-size: 0.875rem;
+  }
 }
 
 .home__welcome-button {
   margin-top: 2.625rem;
   color: #80395E;
+  width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
+  .home__welcome-button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
   .home__welcome {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 calc(100% / 12 * 12);

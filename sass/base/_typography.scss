@@ -22,7 +22,7 @@ h1 {
     font-family: $johnMayer;
     font-weight: normal;
     font-size: 4.5rem;
-    line-height: 100%;
+    line-height: 110%;
 }
 
 h2 {
@@ -49,6 +49,8 @@ p {
 
 .nav {
     font-weight: $medium;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
