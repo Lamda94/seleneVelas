@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav container">
+        <nav class="container nav">
             <a href="#home" class="nav__logo"><img src="img/logo_nav.svg" alt="Logo de Selene" class="nav__logo-img"></a>           
             <ul class="nav__menu">
                 <li class="nav__item">
@@ -34,12 +34,15 @@
         </nav>
     </header>
     <main>
-        <section class="home" id="home">
-            <img src="" alt="" class="home__background">
-            <div class="home__welcome container">
+        <section class="home container" id="home">
+            <div class="home__background">
+                <div class="home__background-opacityMask"></div>
+                <img src="img/home.png" alt="vela sobre raso" class="home__background-img">
+            </div>            
+            <div class="home__welcome">
                 <h1 class="home__welcome-title">Bienvenido a Selene</h1>
-                <p class="home__welcome-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa omnis fuga quaerat quasi minus nihil ipsam possimus dolore qui asperiores delectus commodi, quia id ratione aliquam quam vitae, quae officiis.</p>
-                <button class="home__welcome-button">Ver Productos</button>
+                <p class="home__welcome-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis convallis elit eget vestibulum. Curabitur cursus fermentum nibh.</p>
+                <button class="home__welcome-button button">Ver Productos</button>
             </div>
         </section>
 

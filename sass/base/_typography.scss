@@ -21,6 +21,8 @@ body {
 h1 {
     font-family: $johnMayer;
     font-weight: normal;
+    font-size: 4.5rem;
+    line-height: 100%;
 }
 
 h2 {
@@ -31,6 +33,18 @@ h2 {
 h3 {
     font-family: $johnMayer;
     font-weight: normal;
+}
+
+p { 
+    font-size: 1.125rem;
+    line-height: 170%;
+}
+
+.button {
+    font-size: 1.125rem;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    width: 50%;
 }
 
 .nav {
