@@ -420,6 +420,8 @@ p {
 header {
   border-bottom: 2px solid #80395E;
   position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -428,6 +430,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
+  background-color: #FFFFFF;
 }
 
 .nav {
@@ -468,7 +471,7 @@ header {
     top: 0;
     height: 100vh;
     padding: 25% 10% 25% 10%;
-    background-color: red;
+    background-color: #FFFFFF;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
