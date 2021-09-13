@@ -3,10 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
     
 
     &__background {
-        width: 100vw;
+        width: 100%;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -26,7 +27,7 @@
 
         &-img {
            height: 100vh;
-           width: 100vw;
+           width: 100%;
            object-fit: cover;
            object-position: center;
         }
@@ -40,7 +41,7 @@
         justify-content: center;
         flex: 0 0 calc(100% / 12 * 5);
         color: $white;
-        padding-top: 2rem;
+        // padding-top: 2rem;
 
         &-title {
             margin-top: 0;
@@ -54,6 +55,10 @@
         &-p{
             margin-top: 1rem;
 
+            @include respond(small-desktop) {
+                margin-top: 2rem;
+            }
+
             @include respond(mobile) {
                 font-size: 0.875rem;
             }
@@ -64,16 +69,53 @@
             color: $bordeaux;
             width: 50%;
 
-            @include respond(mobile) {
+            &:hover {
+                color: $white;
+                background-color: transparent;
+                box-shadow: inset 0 0 4px $white;
+                backdrop-filter: blur(5px);
+
+            }
+
+            @include respond(small-desktop) {
+                margin-top: 4rem;
                 width: 100%;
             }
         }
 
-        @include respond(small-desktop) {
+        @include respond(small-desktop) {         
             flex: 0 0 calc(100% / 12 * 12);
             text-align: center;
             align-items: center;
         }
 
+    }
+
+    &__separation {
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 10%;
+        z-index: -1;
+
+        @include respond(small-desktop) {
+            bottom: -5%;
+        }
+
+        svg {
+            position: absolute;
+            bottom: -160%;
+            left: 0;
+            border: none;
+
+            @include respond(small-desktop) {
+                bottom: 80%;
+            }
+        }
+        
+
+        
     }
 }
