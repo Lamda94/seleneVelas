@@ -1,11 +1,11 @@
 .catalogo {
     height: 40rem;
     display: flex column;
-    margin-top: -10rem;
+    margin-top: -8rem;
 
 
     @include respond(tablet){
-        margin-top: -8rem;
+        margin-top: -3rem;
         height: 30rem;
     }
 
@@ -16,7 +16,6 @@
     }
 
     &__header {
-        padding-top: 6rem;
         display: flex;
         justify-content: center;
 
@@ -110,7 +109,6 @@
 
         &-p {
             @include respond(tablet) {
-                padding: 0 1rem;
                 font-size: 0.875rem;   
               }
         }
@@ -129,10 +127,10 @@
         align-items: center;
         justify-content: center;
         font-size: 1.2rem;
-        transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
 
         &:hover {
-            transform: scale(120%);
+            transform: scale(120%) !important;
         }
         
         &::after {

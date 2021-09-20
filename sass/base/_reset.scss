@@ -21,3 +21,12 @@ body {
 :root {
     --swiper-theme-color: #FF73BB;  
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    margin: 0;
+    scroll-margin-top: 7rem;
+}
