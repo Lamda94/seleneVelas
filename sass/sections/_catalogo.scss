@@ -1,13 +1,11 @@
 .catalogo {
     height: 40rem;
     display: flex column;
-    margin-top: -4rem;
+    margin-top: -10rem;
 
-    @include respond(small-desktop){
-        margin-top: -10rem;
-    }
 
     @include respond(tablet){
+        margin-top: -8rem;
         height: 30rem;
     }
 
