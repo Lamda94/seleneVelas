@@ -18,13 +18,6 @@ const navSlide = () => {
 
         burger.classList.toggle('toggle')
     })
-
-    console.log(navLinks)
-    navLinks.addEventListener('click', ()=> {
-        navMenu.classList.toggle('nav__menu--active')
-        burger.classList.toggle('toggle')
-    })
-
     
 }
 

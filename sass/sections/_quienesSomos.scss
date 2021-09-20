@@ -1,3 +1,65 @@
 .quienesSomos {
     background-color: $baby-pink;
+    color: $bordeaux;
+    margin-top: -3rem;
+
+    @include respond(mobile){
+        margin-top: -1rem;
+        }
+
+    &__separation-bottom {
+       margin-top: -0.5rem;
+    }
+    
+    &__header {
+       margin-bottom: 4.75rem; 
+       color: $black;
+
+       @include respond(mobile){
+        font-size: 2.5rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 10);
+        justify-content: space-between;
+
+        @include respond(tablet) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+         }
+
+    }
+
+    &__item {
+        display: flex;
+        flex: 0 0 calc(100% / 12 * 3);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @include respond(tablet) {
+            max-width: 30rem
+         }
+
+        
+        &-title {
+            font-size: 1.5625rem;
+            margin-bottom: 0.7rem;
+            margin-top: 2rem;
+        }
+
+        &-p {
+            @include respond(mobile) {
+                font-size: 0.875rem;   
+              }
+        }
+        
+    }
+
+
 }
