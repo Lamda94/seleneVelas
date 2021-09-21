@@ -1079,6 +1079,129 @@ header {
   }
 }
 
+.titulo {
+  margin-top: 10px;
+  color: #806070;
+  font-family: John Mayer;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 73px;
+}
+
+.container-cols {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 52px;
+}
+
+.container-cols .col-1 form input {
+  width: 600px;
+  height: 60px;
+  margin-bottom: 10px;
+  background: rgba(255, 190, 224, 0.5);
+  border: none;
+  border-radius: 9px;
+  padding-left: 10px;
+  color: rgba(64, 64, 64, 0.8);
+  margin-bottom: 20px;
+}
+
+.container-cols .col-1 form textarea {
+  width: 600px;
+  height: 190px;
+  margin-bottom: 10px;
+  background: rgba(255, 190, 224, 0.5);
+  border: none;
+  border-radius: 9px;
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.container-cols .col-1 form .btn {
+  height: 74px;
+  border-radius: 10px;
+  background: #FF73BB;
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.container-cols .col-2 .contacto__info-items {
+  margin-left: 100px;
+}
+
+.container-cols .col-2 .contacto__info-items .info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  color: #404040;
+}
+
+.container-cols .col-2 .contacto__info-items .info-item p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  color: #404040;
+  margin-left: 10px;
+}
+
+.container-cols .col-2 .contacto__info-items .info-item img {
+  vertical-align: middle;
+}
+
+.container-cols .col-2 .contacto__info-items .item-1 {
+  margin-bottom: 29px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-1 p {
+  width: 386px;
+  height: 84px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-2 {
+  margin-bottom: 37px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-2 p {
+  width: 322px;
+  height: 28px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-3 {
+  margin-bottom: 41px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-3 p {
+  width: 559px;
+  height: 27px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-4 {
+  margin-bottom: 41px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-4 p {
+  width: 362px;
+  height: 24px;
+}
+
+.container-cols .col-2 .contacto__info-items .item-5 {
+  width: 464px;
+  height: 84px;
+  font-weight: bold;
+}
+
 .footer {
   background-color: #80395E;
   color: #F6F6F6;

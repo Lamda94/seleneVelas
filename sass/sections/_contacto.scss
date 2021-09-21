@@ -1,0 +1,109 @@
+.titulo{
+    margin-top: 10px;
+    color: rgba(128, 96, 112, 1);
+    font-family: John Mayer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 73px;
+}
+.container-cols{
+    display: flex;
+    margin-top: 52px;
+    .col-1{       
+        form{
+            input{
+                width: 600px;
+                height: 60px;                
+                margin-bottom: 10px;
+                background: rgba(255, 190, 224, 0.5);
+                border: none;
+                border-radius: 9px;
+                padding-left: 10px;
+                color: rgba(64, 64, 64, 0.8);
+                margin-bottom: 20px;
+            }
+
+            textarea{
+                width: 600px;
+                height: 190px;
+                margin-bottom: 10px;
+                background: rgba(255, 190, 224, 0.5);
+                border: none;
+                border-radius: 9px;
+                padding-left: 10px;
+                padding-top: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .btn{
+                height: 74px;
+                border-radius: 10px;
+                background: #FF73BB;
+                mix-blend-mode: normal;
+                box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .col-2{
+        .contacto__info-items{
+            margin-left: 100px;
+            .info-item{
+                display: flex;
+                font-family: Roboto;
+                font-style: normal;
+                color: #404040;
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.05em;
+                    color: #404040;
+                    margin-left: 10px;
+                }
+                img{
+                    vertical-align: middle;
+                }
+            }
+            .item-1{
+                p{
+                    width: 386px;
+                    height: 84px;
+                }                
+                margin-bottom: 29px;
+            }
+            .item-2{
+                p{
+                    width: 322px;
+                    height: 28px;
+                }                
+                margin-bottom: 37px;
+            }
+            .item-3{
+                p{
+                    width: 559px;
+                    height: 27px;
+                }
+                margin-bottom: 41px;
+            }
+            .item-4{
+                p{
+                    width: 362px;
+                    height: 24px;
+                }
+                margin-bottom: 41px;
+            }
+            .item-5{
+                width: 464px;
+                height: 84px;
+                font-weight: bold;
+            }
+        }
+    }
+}
